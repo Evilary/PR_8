@@ -7,6 +7,23 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
         
+        <StackPanel Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center">
+            <Rectangle Width="200" Height="250" Fill="LightBlue" Stroke="DarkBlue" StrokeThickness="2"/>
+            <TextBlock x:Name="LightInfo" Text="Легкий воин: 100/100" Margin="0,20" FontSize="14"/>
+            <Button x:Name="BtnLight" Content="Урон 20" Click="BtnLight_Click" Width="100" Height="30"/>
+        </StackPanel>
+
+        
+        <StackPanel Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Center">
+            <Rectangle Width="200" Height="250" Fill="LightCoral" Stroke="DarkRed" StrokeThickness="2"/>
+            <TextBlock x:Name="HeavyInfo" Text="Тяжелый воин: 100/100" Margin="0,20" FontSize="14"/>
+            <Button x:Name="BtnHeavy" Content="Урон 20" Click="BtnHeavy_Click" Width="100" Height="30"/>
+        </StackPanel>
     </Grid>
 </Window>
