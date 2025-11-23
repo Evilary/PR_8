@@ -14,14 +14,15 @@
 
         
         <StackPanel Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center">
-            <Rectangle Width="200" Height="250" Fill="LightBlue" Stroke="DarkBlue" StrokeThickness="2"/>
+            <Image x:Name="LightImage" Width="200" Height="250" Source="/Lite.jpg"/>
             <TextBlock x:Name="LightInfo" Text="Легкий воин: 100/100" Margin="0,20" FontSize="14"/>
             <Button x:Name="BtnLight" Content="Урон 20" Click="BtnLight_Click" Width="100" Height="30"/>
         </StackPanel>
 
         
         <StackPanel Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Center">
-            <Rectangle Width="200" Height="250" Fill="LightCoral" Stroke="DarkRed" StrokeThickness="2"/>
+            <Image x:Name="ProtImage" Width="200" Height="250" Source="/Pro.jpg"/>
+
             <TextBlock x:Name="HeavyInfo" Text="Тяжелый воин: 100/100" Margin="0,20" FontSize="14"/>
             <Button x:Name="BtnHeavy" Content="Урон 20" Click="BtnHeavy_Click" Width="100" Height="30"/>
         </StackPanel>
